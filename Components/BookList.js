@@ -5,6 +5,5 @@ const BookList = (bookList) => {
   }
 
   html += `</ul>`;
-
   return html;
 };

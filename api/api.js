@@ -4,6 +4,19 @@ async function getAll() {
   const result = await fetch(url)
     .then((result) => result.json())
     .catch((e) => e);
-
   return result;
+}
+
+
+
+
+
+async function fetchInfo(id) {
+  try {
+
+    const info = await fetch(`${url}/${id}`);
+    return await info.json();
+  } catch (e) {
+    return e;
+  }
 }
