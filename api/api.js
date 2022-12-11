@@ -17,6 +17,8 @@ async function fetchInfo(id) {
     const info = await fetch(`${url}/${id}`);
     return await info.json();
   } catch (e) {
+
+    console.error(e);
     return e;
   }
 }
